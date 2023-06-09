@@ -24,7 +24,7 @@ function Login() {
     fetch('https://tame-red-clownfish-sari.cyclic.app/auth/login', requestOptions)
       .then(response => response.json())
       .then(data => {
-        console.log(data)
+        // console.log(data)
         if (data.token) {
           localStorage.setItem('token', data.token)
           dispatch({
